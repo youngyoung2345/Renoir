@@ -1,12 +1,29 @@
+'''
+
+Code written by Hayoung Lee.
+Contact email: lhayoung9@khu.ac.kr (Note: I may not check my email regularly due to my mistake.)
+
+Training conducted using TPU v2 on Google Colaboratory.
+
+'''
+
 import os
 from google.colab import drive
 
+# Mount Google Drive
+
 drive.mount('/content/drive')
+
+# Set project folder path
 
 project_folder = '/content/drive/MyDrive/Project3'
 
+# Initialize lists to store image paths and labels
+
 image = []
 label = []
+
+# Traverse through the project folder to collect image paths and corresponding labels
 
 for subdir, _, files in os.walk(project_folder):
     for file in files:
@@ -24,13 +41,29 @@ from sklearn.model_selection import train_test_split
 
 BATCH_SIZE = 128
 
+# Split dataset into training and testing sets
+
 X_train, X_test, y_train, y_test = train_test_split(image, label, test_size = 0.33, random_state = 425)
+
+# Create custom datasets and dataloaders
 
 train_dataset = CustomDataset(X_train, y_train)
 train_loader = DataLoader(train_dataset, batch_size = BATCH_SIZE, shuffle = True)
 test_dataset = CustomDataset(X_test, y_test)
 test_loader = DataLoader(test_dataset, batch_size = BATCH_SIZE, shuffle = True)
 
+
+'''
+
+Declaration of Model, Optimizer, etc.
+
+1) Epoch: 100
+2) Batch size: 128
+    - Due to the small size of the dataset, batch size was increased based on professor's advice.
+3) Loss Function: CrossEntropy
+4) Optimizer: Adam with Learning rate 0.01
+
+'''
 
 
 import time
@@ -42,9 +75,27 @@ from Model import Recognizer
 EPOCH = 100
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
+# Initialize model, loss function, and optimizer
+
 MODEL = Recognizer().to(DEVICE)
 LOSS = nn.CrossEntropyLoss()
 OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr = 0.01)
+
+
+'''
+
+Function Definitions
+
+1) def compute_accuracy_and_loss(device, model, data_loader):
+    - Input: device, model, data_loader
+    - Output: loss / example_num, correct_num / example_num * 100
+        - 'loss / example_num' represents the average loss.
+        - 'correct_num / example_num * 100' represents the accuracy percentage.
+
+2) def save_weight(model, path):
+    - This function saves the model's weights at the specified path.
+    
+'''
 
 
 def compute_accuracy_and_loss(device, model, data_loader):
@@ -67,7 +118,7 @@ def compute_accuracy_and_loss(device, model, data_loader):
         correct_num += (true_index == predict_index).sum
         
         print (f'Epoch: {epoch:03d} | '
-               f'Batch {batch_idx:03d}/{len(train_loader):03d} |'
+               f'Batch {batch_idx:03d}/{len(data_loader):03d} |'
                f'Loss: {loss:03f}')
         
     return loss/example_num, correct_num/example_num*100
@@ -76,11 +127,13 @@ def compute_accuracy_and_loss(device, model, data_loader):
 def save_weight(model, path):
     torch.save(model.state_dict(), path)
 
+
 '''
 
 Visualizing model architecture by using tensorboard Library
 
 '''
+
 
 from torch.utils.tensorboard import SummaryWriter
 
@@ -89,11 +142,13 @@ image_for_visualization, label_for_visualization = train_dataset[0]
 writer = SummaryWriter()
 writer.add_graph(MODEL, image_for_visualization.unsqueeze(0))
 
+
 '''
 
 Training
 
 '''
+
 
 start_time = time.time()
 
@@ -119,12 +174,16 @@ for epoch in range(EPOCH):
         train_loss, train_acc = compute_accuracy_and_loss(DEVICE, MODEL, train_loader)
         test_loss, test_acc = compute_accuracy_and_loss(DEVICE, MODEL, test_loader)
         
+        # Add scalars to tensorboard for visualization
+        
         writer.add_scalar('train_loss', train_loss, epoch)
         writer.add_scalar('train_acc', train_acc, epoch)
         writer.add_scalar('test_loss', test_loss, epoch)
         writer.add_scalar('test_acc', test_acc, epoch)
 
         writer.flush()
+    
+    # Save model weights every 10 epochs
     
     if epoch%10 == 0:
         save_weight(MODEL.VGG19, f"/content/drive/MyDrive/VGG19_{epoch}.pth")
@@ -138,3 +197,5 @@ print(f'Total Training Time: {elapsed:.2f} min')
 
 writer.close()
 
+%load_ext tensorboard
+%tensorboard --logdir=runs

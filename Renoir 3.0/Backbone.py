@@ -1,18 +1,11 @@
-import numpy
-
-import torch
-import torchvision
-import torch.nn.functional as F
-
 import torch.nn as nn
 
 '''
 
 Class VGG19
-    1. def __init__(self, base_dim = 64, s = 64, m = 0.6):
+    1. def __init__(self, base_dim = 64):
         1) Hyper parameter
         - base_dim is derived from "VERY DEEP CONVOLUTIONAL NETWORKS FOR LARGE-SCALE IMAGE RECOGNITION."
-        - s and m is derived from "ArcFace: Additive Angular Margin Loss for Deep Face Recognition".
         - The architecture of this class is partially based on VGG19, with the notable exception that it does not include fully connected layers.
     
     2. def forward(self, x):
