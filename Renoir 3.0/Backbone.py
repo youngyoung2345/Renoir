@@ -22,9 +22,6 @@ Class VGG19
 '''
 
 
-
-
-
 def conv_2(in_dim, out_dim):
     model = nn.Sequential(
         nn.Conv2d(in_dim, out_dim, kernel_size = 3, padding = 1),
@@ -56,7 +53,7 @@ def conv_4(in_dim, out_dim):
     return model
 
 class VGG19(nn.Module):
-    def __init__(self, base_dim=64, s=64, m =0.6):
+    def __init__(self, base_dim=64):
         super(VGG19, self).__init__()
         self.feature = nn.Sequential(
         conv_2(3, base_dim),
@@ -65,7 +62,6 @@ class VGG19(nn.Module):
         conv_4(base_dim*4, base_dim*8),
         conv_4(base_dim*8, base_dim*8)
         )
-        
         
     def forward(self, x):
         x = self.feature(x)

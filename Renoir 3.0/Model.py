@@ -6,7 +6,7 @@ class Recognizer(nn.Module):
     def __init__(self):
         super(Recognizer, self).__init__()
         self.VGG19 = VGG19()
-        self.ArcFace = ArcFace(in_dim = 4096, out_dim = 20, s = 64, m = 0.5)
+        self.ArcFace = ArcFace(in_dim = 25088, out_dim = 20, s = 64, m = 0.5)
     
     def forward(self, x):
         x = self.VGG19(x)
