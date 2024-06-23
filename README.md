@@ -1,4 +1,4 @@
-# Renoir
+# 🎨 Renoir
 
 Renoir is **a project aimed at recognizing the styles of digital artwork**. It originated as an assignment for the 'Introduction to Software Convergence' course at Kyunghee University's Department of Software Convergence.
 
@@ -13,15 +13,18 @@ As a result, we concluded that a program capable of verifying whether generative
 
 
 ## Renoir 1.0
-
-<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/5f7aae94-ceb3-4314-b0de-8468695820c0.png" width="222" height="247.5"/>
+<div align="center">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/5f7aae94-ceb3-4314-b0de-8468695820c0.png" width="222" height="247.5"/>
+</div>
 
 - Backbone : VGG16
 - Cost function : Binary Cross Entropy
 
 ## Renoir 2.0
 
-<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
+<div align="center">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
+</div>
 
 
 - Backbone : Inception
@@ -30,7 +33,9 @@ As a result, we concluded that a program capable of verifying whether generative
 
 ## Renoir 3.0
 
-<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/2e347cda-ab0f-419f-9fca-5577aa9a1a26" width="108.8" height="119.1"/>
+<div align="center">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/2e347cda-ab0f-419f-9fca-5577aa9a1a26" width="108.8" height="119.1"/>
+</div>
 
 
 - Backbone : VGG19 without fully connected layer
