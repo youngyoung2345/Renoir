@@ -13,26 +13,25 @@ As a result, we concluded that a program capable of verifying whether generative
 
 
 ## Renoir 1.0
-<div style="image-align:center;">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/5f7aae94-ceb3-4314-b0de-8468695820c0.png" width="222" height="247.5"/>
-</div>
+
+<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/5f7aae94-ceb3-4314-b0de-8468695820c0.png" width="222" height="247.5"/>
 
 - Backbone : VGG16
 - Cost function : Binary Cross Entropy
 
 ## Renoir 2.0
-<div style="image-align:center;">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
-</div>
+
+<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
+
 
 - Backbone : Inception
 - Cost function : Binary Cross Entropy
 - Sadly, a code of Renoir 2.0 doesn't exist.
 
 ## Renoir 3.0
-<div style="image-align:center;">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/2e347cda-ab0f-419f-9fca-5577aa9a1a26" width="222" height="247.5"/>
-</div>
+
+<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/2e347cda-ab0f-419f-9fca-5577aa9a1a26" width="108.8" height="119.1"/>
+
 
 - Backbone : VGG19 without fully connected layer
 - Cost function : ArcFace
