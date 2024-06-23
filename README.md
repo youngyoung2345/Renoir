@@ -1,4 +1,2 @@
-# Renoir
-
-## project to recognize style of Digital artwork
+# Renoir :  project to recognize style of Digital artwork
 
