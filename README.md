@@ -49,8 +49,11 @@ As a result, we concluded that a program capable of verifying whether generative
 **Second Graph**
 - It includes training accuracy and test accuracy during epochs 21 to 28.
 
-<div align="left">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/a3785b05-e2a0-46ae-a0ab-32b141ba98b0" width="411.75" height="291.9"/>
-</div> <div align="right">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/b1cc111d-7f48-4c30-afb9-01be9a7d7bfc" width="411.75" height="243.25"/>
+<div style="display: flex;">
+  <div style="flex: 50%; padding: 5px; text-align: center;">
+    <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/a3785b05-e2a0-46ae-a0ab-32b141ba98b0" width="411.75" height="243.25"/>
+  </div>
+  <div style="flex: 50%; padding: 5px; text-align: center;">
+    <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/b1cc111d-7f48-4c30-afb9-01be9a7d7bfc" width="411.75" height="243.25"/>
+  </div>
 </div>
