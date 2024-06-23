@@ -25,7 +25,7 @@ class ArcFace(nn.Module):
         self.m = m
         self.W = nn.Parameter(torch.empty(in_dim, out_dim))
 
-        nn.init.xavier_uniform_(self.W)
+        nn.init.kaiming_uniform_(self.W)
         
     def forward(self, x):
         normalized_x = F.normalize(x, p=2, dim=1)

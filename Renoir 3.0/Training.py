@@ -79,7 +79,7 @@ DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 MODEL = Recognizer().to(DEVICE)
 LOSS = nn.CrossEntropyLoss()
-OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr = 0.01)
+OPTIMIZER = torch.optim.Adam(MODEL.parameters(), lr = 0.001)
 
 
 '''
