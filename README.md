@@ -13,7 +13,7 @@ As a result, we concluded that a program capable of verifying whether generative
 
 
 ## Renoir 1.0
-<div style="text-align:center;">
+<div style="image-align:center;">
   <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/5f7aae94-ceb3-4314-b0de-8468695820c0.png" width="222" height="247.5"/>
 </div>
 
@@ -21,7 +21,7 @@ As a result, we concluded that a program capable of verifying whether generative
 - Cost function : Binary Cross Entropy
 
 ## Renoir 2.0
-<div style="text-align:center;">
+<div style="image-align:center;">
   <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
 </div>
 
@@ -30,8 +30,8 @@ As a result, we concluded that a program capable of verifying whether generative
 - Sadly, a code of Renoir 2.0 doesn't exist.
 
 ## Renoir 3.0
-<div style="text-align:center;">
-  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/6c7128ac-3621-44fc-a3fb-f306d23df0fe.png" width="222" height="247.5"/>
+<div style="image-align:center;">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/2e347cda-ab0f-419f-9fca-5577aa9a1a26" width="222" height="247.5"/>
 </div>
 
 - Backbone : VGG19 without fully connected layer
