@@ -40,3 +40,18 @@ As a result, we concluded that a program capable of verifying whether generative
 
 - Backbone : VGG19 without fully connected layer
 - Cost function : ArcFace
+
+### Renoir 3.0 Accuracy Graph
+
+**First Graph**
+- It includes training accuracy and test accuracy during epochs 1 to 22.
+
+**Second Graph**
+- It includes training accuracy and test accuracy during epochs 21 to 28.
+
+<div align="left">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/a3785b05-e2a0-46ae-a0ab-32b141ba98b0" width="164.7" height="97.3"/>
+</div>
+<div align="right">
+  <img src="https://github.com/youngyoung2345/Renoir/assets/134286859/b1cc111d-7f48-4c30-afb9-01be9a7d7bfc" width="164.7" height="97.3"/>
+</div>
