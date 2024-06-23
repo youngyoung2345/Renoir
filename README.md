@@ -54,4 +54,7 @@ As a result, we concluded that a program capable of verifying whether generative
   <a href="link"><img src="https://github.com/youngyoung2345/Renoir/assets/134286859/b1cc111d-7f48-4c30-afb9-01be9a7d7bfc" width="411.75" height="243.25"></a>  
 </figure>
 
-if you want to read more information, please visit my webpage, https://carpal-money-c50.notion.site/Renoir-362407490c6b403681048c471e52226f?pvs=4
+if you want to read more information, visit my webpage.
+Please note that the posts on my webpage are written in Korean.
+
+link : https://carpal-money-c50.notion.site/Renoir-362407490c6b403681048c471e52226f?pvs=4
