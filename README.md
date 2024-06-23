@@ -13,7 +13,7 @@ As a result, we concluded that a program capable of verifying whether generative
 
 
 ## Renoir 1.0
-<img src="youngyoung2345/Renoir/assets/134286859/92a9ef88-2bdc-4777-8517-006c01184581">
+<img src="https://github.com/youngyoung2345/Renoir/assets/134286859/eba7735c-b09c-4cd5-9d18-052493252d5f.png" width="222" height="247.5"/>
 - Backbone : VGG16
 - Cost function : Binary Cross Entropy
 
