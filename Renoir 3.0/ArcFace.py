@@ -4,9 +4,9 @@ import torch.nn.functional as F
 
 '''
 
-Class ArcFace
+Class CosFace
     1. def __init__(self, in_dim, out_dim, s, m):
-        - s and m are parameters derived from "ArcFace: Additive Angular Margin Loss for Deep Face Recognition".
+        - s and m are parameters derived from "CosFace: Large Margin Cosine Loss for Deep Face Recognition".
         - Matrix W:
             1) The matrix W has dimensions in_dim x out_dim.
             2) W is initialized using Xavier initialization.
@@ -18,9 +18,9 @@ Class ArcFace
 
 '''
 
-class ArcFace(nn.Module):
+class CosFace(nn.Module):
     def __init__(self, in_dim, out_dim, s, m):
-        super(ArcFace, self).__init__()
+        super(CosFace, self).__init__()
         self.s = s
         self.m = m
         self.W = nn.Parameter(torch.empty(in_dim, out_dim))
