@@ -187,7 +187,7 @@ for epoch in range(EPOCH):
     
     if epoch%10 == 0:
         save_weight(MODEL.VGG19, f"/content/drive/MyDrive/VGG19_{epoch}.pth")
-        save_weight(MODEL.ArcFace, f"/content/drive/MyDrive/ArcFace_{epoch}.pth")
+        save_weight(MODEL.CosFace, f"/content/drive/MyDrive/CosFace_{epoch}.pth")
         
     elapsed = (time.time() - start_time)/60
     print(f'Time elapsed: {elapsed:.2f} min')
