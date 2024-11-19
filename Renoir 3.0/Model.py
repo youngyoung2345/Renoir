@@ -10,6 +10,6 @@ class Recognizer(nn.Module):
     
     def forward(self, x):
         x = self.VGG19(x)
-        x = self.ArcFace(x)
+        x = self.CosFace(x)
         
         return x
