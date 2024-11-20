@@ -103,7 +103,7 @@ def compute_accuracy_and_loss(device, model, data_loader):
     
     for batch_idx, (image, label) in enumerate(data_loader):
         image = image.to(device)
-        probability = model(image)
+        probability = model.to(image)
         
         #Calculate loss using CrossEntropy
     
