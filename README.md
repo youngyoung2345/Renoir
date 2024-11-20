@@ -38,8 +38,9 @@ As a result, we concluded that a program capable of verifying whether generative
 </div>
 
 
-- Backbone : VGG19 without fully connected layer
-- Cost function : ArcFace
+- Backbone : VGG19 without fully connected layer and with Batch Normalization
+- Cost function : CosFace
+- You can download the .pth file at this link : https://drive.google.com/file/d/11rjLBSiwp_CJ8oYXAP0U6Q9O3VMC8fZ3/view?usp=sharing
 
 ### Renoir 3.0 Accuracy Graph
 
