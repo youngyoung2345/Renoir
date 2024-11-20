@@ -40,7 +40,7 @@ As a result, we concluded that a program capable of verifying whether generative
 
 - Backbone : VGG19 without fully connected layer and with Batch Normalization
 - Cost function : CosFace
-- You can download the .pth file at this link : https://drive.google.com/file/d/11rjLBSiwp_CJ8oYXAP0U6Q9O3VMC8fZ3/view?usp=sharing
+- You can download the .pth file at this link : [ https://drive.google.com/file/d/11rjLBSiwp_CJ8oYXAP0U6Q9O3VMC8fZ3/view?usp=sharing](https://drive.google.com/drive/folders/183tAa1XJWaXFiXg66Td6OdBFhH7stzZ_?usp=sharing)
 
 ### Renoir 3.0 Accuracy Graph
 
