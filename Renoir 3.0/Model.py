@@ -1,5 +1,5 @@
 from Backbone import VGG19
-from ArcFace import CosFace
+from CosFace import CosFace
 import torch.nn as nn
 
 class Recognizer(nn.Module):
