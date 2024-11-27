@@ -14,6 +14,7 @@
 
 <img src="https://github.com/user-attachments/assets/bc1648f7-8c5d-423f-89bf-9a7f71140063" width="150"/>
 
+
 Backbone : VGG19 without fully connected layer
 Optimizer : Adam with learning rate 0.01
 
