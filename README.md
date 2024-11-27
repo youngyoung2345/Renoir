@@ -19,3 +19,5 @@ Backbone : VGG19 without fully connected layer
 
 Optimizer : Adam with learning rate 0.01
 
+
+If you would like to learn more about this project, please refer to the following link, https://carpal-money-c50.notion.site/Renoir-362407490c6b403681048c471e52226f?pvs=4
