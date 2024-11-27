@@ -12,7 +12,7 @@ Class VGG19
         - The forward pass of the VGG19 model.
         - EXAMPLE ) input : 224 x 224 x 3 -> output :  7 x 7 x 512
         
-'''
+''' 
 
 
 def conv_2(in_dim, out_dim):

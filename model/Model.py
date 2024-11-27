@@ -13,3 +13,4 @@ class Recognizer(nn.Module):
         x = self.CosFace(x)
         
         return x
+ 

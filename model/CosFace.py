@@ -17,7 +17,7 @@ Class CosFace
         - the forward pass of the ArcFace model.
 
 '''
-
+ 
 class CosFace(nn.Module):
     def __init__(self, in_dim, out_dim, s, m):
         super(CosFace, self).__init__()

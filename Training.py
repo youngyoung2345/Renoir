@@ -1,5 +1,5 @@
 '''
-
+ 
 Code written by Hayoung Lee.
 Contact email: lhayoung9@khu.ac.kr (Note: I may not check my email regularly due to my mistake.)
 
@@ -70,7 +70,7 @@ import time
 import torch
 import torch.nn as nn
 
-from Model import Recognizer
+from model.Model import Recognizer
 
 EPOCH = 100
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
