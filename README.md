@@ -1,5 +1,5 @@
 # Renoir
-## Renoir is project whose goal is artstyle recognition
+The project Renoir, which aims to recognize art styles, started as a task for the course Software Convergence Introduction at Kyung Hee University
 
 ### Problem Definition
 
