@@ -9,7 +9,7 @@
 
 ### Renoir
 
-![다운로드](https://github.com/user-attachments/assets/fb408f57-5b8e-435d-91d7-94df9771dd5f)
+![그림1](https://github.com/user-attachments/assets/bc1648f7-8c5d-423f-89bf-9a7f71140063)
 
 Backbone : VGG19 without fully connected layer
 Optimizer : Adam with learning rate 0.01
