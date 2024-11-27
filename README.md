@@ -16,5 +16,6 @@
 
 
 Backbone : VGG19 without fully connected layer
+
 Optimizer : Adam with learning rate 0.01
 
